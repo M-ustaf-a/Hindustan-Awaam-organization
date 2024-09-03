@@ -83,6 +83,7 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 }
-.cl-internal-1dauvpw{
-  @apply hidden
+
+.cl-internal-df7v37, .cl-internal-1dauvpw {
+  @apply hidden;
 }

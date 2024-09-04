@@ -1,13 +1,14 @@
 
-import { ThreeDCardDemo } from '@/components/ThreeDCardDemo';
+import { PlaceholdersAndVanishInputDemo } from '@/components/PlaceholdersAndVanishInputDemo';
+
 import React from 'react'
 
-const Dashboard = () => {
+const dashboard = () => {
   return (
     <div>
-        <ThreeDCardDemo/>
+        <PlaceholdersAndVanishInputDemo/>
     </div>
   )
 }
 
-export default Dashboard;
+export default dashboard;

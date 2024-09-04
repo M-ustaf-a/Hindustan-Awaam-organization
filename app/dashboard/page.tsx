@@ -2,12 +2,12 @@
 import { PlaceholdersAndVanishInputDemo } from '@/components/PlaceholdersAndVanishInputDemo';
 import { SidebarDemo } from '@/components/Sidebar';
 
-import React from 'react'
-
 const dashboard = () => {
   return (
-    <div>
-        <PlaceholdersAndVanishInputDemo/>
+    <div className=''>
+      <div>
+        <SidebarDemo/>
+      </div>
     </div>
   )
 }

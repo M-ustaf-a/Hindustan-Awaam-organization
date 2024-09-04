@@ -11,8 +11,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { PlaceholdersAndVanishInputDemo } from "./PlaceholdersAndVanishInputDemo";
 
-export function SidebarDemo({ children }: { children: React.ReactNode }) {
+export function SidebarDemo() {
   const links = [
     {
       label: "Dashboard",
@@ -70,17 +71,18 @@ export function SidebarDemo({ children }: { children: React.ReactNode }) {
                             </div>
                         )}
                     </div>
-                    {/* {open && (
+                    {open && (
                         <div className="mt-4 px-4 text-sm text-neutral-500 dark:text-neutral-400">
-                            Hosted on Vercel<br />
-                            Made with Aceternity UI
+                            <br />
+                            
                         </div>
-                    )} */}
+                    )}
                 </SidebarBody>
             </Sidebar>
             <main className="flex-1 overflow-auto py-2 sm:py-4 md:py-8">
                 <div className="w-full px-2 sm:px-4 md:px-8">
-                    {children}
+                    {/* {children} */}
+                    <PlaceholdersAndVanishInputDemo/>
                 </div>
             </main>
         </div>
@@ -92,14 +94,14 @@ export const Logo = () => {
       href="#"
       className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
     >
+      <img src="/logo.jpg" alt="" className="h-7 w-7"/>
       {/* <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" /> */}
-      <img src="/logo.jpg" alt="" className="h-8 w-8"/>
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         className="font-medium text-black dark:text-white whitespace-pre"
       >
-        
+       Hindustan Awaam Organization
       </motion.span>
     </Link>
   );
@@ -110,8 +112,8 @@ export const LogoIcon = () => {
       href="#"
       className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
     >
-        <img src="/logo.jpg" alt="" />
       {/* <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" /> */}
+      <img src="/logo.jpg" alt="" />
     </Link>
   );
 };

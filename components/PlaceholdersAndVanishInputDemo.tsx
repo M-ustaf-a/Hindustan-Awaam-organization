@@ -29,6 +29,7 @@ export function PlaceholdersAndVanishInputDemo() {
         onChange={handleChange}
         onSubmit={onSubmit}
       />
+      {/* <SidebarDemo/> */}
     </div>
   );
 }

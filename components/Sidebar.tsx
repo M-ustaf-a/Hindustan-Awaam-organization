@@ -91,7 +91,7 @@ export function SidebarDemo() {
 export const Logo = () => {
   return (
     <Link
-      href="#"
+      href="/"
       className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
     >
       <img src="/logo.jpg" alt="" className="h-7 w-7"/>

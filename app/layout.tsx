@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { ClerkProvider } from "@clerk/nextjs";
+import { SidebarDemo } from "@/components/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,8 +30,10 @@ export default function RootLayout({
           defaultTheme="light"
           enableSystem
           disableTransitionOnChange
+          
         >
-          {children}
+          <SidebarDemo>{children}</SidebarDemo>
+          
         </ThemeProvider>
       </body>
     </html>

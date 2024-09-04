@@ -1,5 +1,6 @@
 "use client";
 
+import { SidebarDemo } from "./Sidebar";
 import { PlaceholdersAndVanishInput } from "./ui/placeholders-and-vanish-input";
 
 export function PlaceholdersAndVanishInputDemo() {
@@ -19,7 +20,7 @@ export function PlaceholdersAndVanishInputDemo() {
     console.log("submitted");
   };
   return (
-    <div className="h-[40rem] flex flex-col mt-10 px-4">
+    <div className="h-[50rem] flex flex-col mt-10 px-4">
       {/* <h2 className="mb-10 sm:mb-20 text-xl text-center sm:text-5xl dark:text-white text-black">
         Ask Anything
       </h2> */}

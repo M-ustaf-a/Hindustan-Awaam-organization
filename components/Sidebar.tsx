@@ -12,35 +12,37 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { PlaceholdersAndVanishInputDemo } from "./PlaceholdersAndVanishInputDemo";
+import { UserButton, UserProfile } from "@clerk/nextjs";
+import { User } from "@clerk/nextjs/server";
 
 export function SidebarDemo() {
   const links = [
     {
       label: "Dashboard",
-      href: "#",
+      href: "/dashboard",
       icon: (
         <IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
       label: "Profile",
-      href: "#",
+      href: "/profile",
       icon: (
         <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
       label: "Settings",
-      href: "#",
+      href: "/setting",
       icon: (
         <IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
-      label: "Logout",
+      label: "",
       href: "#",
       icon: (
-        <IconArrowLeft className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <><IconArrowLeft className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" /><UserButton/></>
       ),
     },
   ];
@@ -65,6 +67,7 @@ export function SidebarDemo() {
                             height={32}
                             alt="Avatar"
                         />
+                        {/* <UserProfile/> */}
                         {open && (
                             <div className="text-sm text-neutral-700 dark:text-neutral-300">
                                 Hindustan Awaam Organization

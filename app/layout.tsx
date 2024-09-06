@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { ClerkProvider } from "@clerk/nextjs";
 import { SidebarDemo } from "@/components/Sidebar";
+import Hero from "./(root)/hero/page";
 
 const inter = Inter({ subsets: ["latin"] });
 

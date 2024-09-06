@@ -12,7 +12,7 @@ import {
 
 export function Cards() {
   return (
-    <Card className="w-[350px]">
+    <Card className="flex items-center justify-center w-[350px]">
       <CardHeader>
         <CardTitle>Hindustan organization</CardTitle>
         <CardDescription>Organizations are built on trust.</CardDescription>

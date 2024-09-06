@@ -18,7 +18,7 @@ export function PlaceholdersAndVanishInputDemo() {
     console.log("submitted");
   };
   return (
-    <div className="h-[50rem] flex flex-col px-4">
+    <div className="h-full flex flex-col px-4">
       <h2 className="mb-10 sm:mb-10 text-xl text-center sm:text-5xl dark:text-white text-black">
         Ask Anything
       </h2>

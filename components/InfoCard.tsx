@@ -8,17 +8,20 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 export function InfoCard() {
   return (
-    <Card className="max-w-full md:max-w-[1475px] p-6 md:p-10 mb-10">
+    <div className="max-w-full md:max-w-[980px] p-4 md:p-10 mb-10">
       <CardHeader>
         <CardTitle>Hindustan Awaam Organization</CardTitle>
         <CardDescription>Organizations are built on trust.</CardDescription>
       </CardHeader>
       <CardContent>
         <div className=" mb-10">
+          <Link href="/hero">
           <img src="/logo.jpg" alt="logo" className="w-36 h-36" />
+          </Link>
         </div>
       </CardContent>
       <div className="text-justify text-sm md:text-base">
@@ -107,6 +110,6 @@ export function InfoCard() {
           opportunities for those who need them most.
         </p>
       </div>
-    </Card>
+    </div>
   );
 }

@@ -3,7 +3,7 @@ import React from 'react'
 
 const info = () => {
   return (
-    <div className='ml-5 mt-7'>
+    <div className='flex items-center justify-center mt-7'>
       <InfoCard/>
     </div>
   )

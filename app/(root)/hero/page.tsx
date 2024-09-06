@@ -1,6 +1,6 @@
 import { SidebarDemo } from '@/components/Sidebar';
 
-const dashboard = () => {
+const Hero = () => {
   return (
     <div className=''>
       <div>
@@ -10,4 +10,4 @@ const dashboard = () => {
   )
 }
 
-export default dashboard;
+export default Hero;

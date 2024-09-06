@@ -3,7 +3,7 @@ import React from 'react'
 
 const info = () => {
   return (
-    <div className='ml-44 mt-7'>
+    <div className='ml-5 mt-7'>
       <InfoCard/>
     </div>
   )

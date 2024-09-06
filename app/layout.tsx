@@ -32,7 +32,6 @@ export default function RootLayout({
           disableTransitionOnChange
           
         >
-          {/* <SidebarDemo></SidebarDemo> */}
           {children}
         </ThemeProvider>
       </body>

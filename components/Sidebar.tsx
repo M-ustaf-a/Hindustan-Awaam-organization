@@ -83,7 +83,7 @@ export function SidebarDemo() {
                 </SidebarBody>
             </Sidebar>
             <main className="flex-1 overflow-auto py-2 sm:py-4 md:py-8">
-                <div className="w-full px-2 sm:px-4 md:px-8">
+                <div className="w-full px-2 sm:px-4 md:px-8 mt-44">
                     {/* {children} */}
                     <PlaceholdersAndVanishInputDemo/>
                 </div>

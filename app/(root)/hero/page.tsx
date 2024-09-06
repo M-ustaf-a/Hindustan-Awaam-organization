@@ -1,5 +1,3 @@
-
-import { PlaceholdersAndVanishInputDemo } from '@/components/PlaceholdersAndVanishInputDemo';
 import { SidebarDemo } from '@/components/Sidebar';
 
 const dashboard = () => {
